@@ -41,5 +41,17 @@ public class ProductRestController {
 	public void deleteProduct(@PathVariable("id") int id){
 		 repository.deleteById(id);
 	}
+	@GetMapping("/hi")
+	public String hi(){
+		return "Spring Security 3ooo !! Hi";
+	}
+	
+	
+	@GetMapping("/hello")
+	public String hello(){
+		return "Spring Security 3ooo ";
+	}
+	
+	
 
 }
